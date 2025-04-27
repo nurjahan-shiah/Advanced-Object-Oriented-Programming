@@ -1,0 +1,46 @@
+##Programming Task 1
+
+For this task, implement a recursive method that finds the sum of n consecutive integer numbers, starting from the integer start and ending with the integer end.
+For example, if start is 0 and end is 5, we expect the method to return 15 (i.e., 0 + 1 + 2 + 3 + 4 + 5). The name of the method is sum, and the header of the method has been written for you in Lab3.java.
+
+
+##Programming Task 2
+
+For this task, implement a recursive function that creates and returns a string of length n using the given character. 
+For example, if the given character is '*', and n is 5, the output should be '*****'. Please note that a string with a length of zero is also possible. To concatenate to a string, use the simple '+' operator. The name of the method is makeString.
+
+
+##Programming Task 3
+
+For this task, implement a recursive function that takes three parameters and returns a string made of the first two input parameters repeatedly. This means the output contains the first input followed by the second input, followed by the first input again, 
+and so on. The number of repetitions of the input strings is specified by the third argument of the method.
+
+Here are some examples:
+interlace("Hello ", "World ", 0) returns ""
+interlace("Hello ", "World ", 1) returns "Hello "
+interlace("Hello ", "World ", 2) returns "Hello World "
+interlace("Hello ", "World ", 3) returns "Hello World Hello"
+The name of the method is interlace.
+
+
+##Programming Task 4
+
+In this task, write a recursive function that takes a string and two characters as parameters and returns the substring that is enclosed between the two given characters. You can assume that the given string includes only one instance of each enclosing character.
+For example, if the input string is 'This is [quite} an example!' and the first enclosing character is '[' and the second is '}', the function should return 'quite.' The name of the method is getSubstring. 
+
+
+##Programming Task 5
+
+For this task, you need to write a recursive function that converts a positive integer, including zero, to its binary equivalent. This method takes one integer input. The binary form of an integer is calculated by repeatedly dividing the integer number (and
+later, its quotient) by 2. You continue this division process until the quotient becomes zero. The remainders of the divisions, from the last division to the first, form the binary representation of the integer number. 
+
+Let's consider an example in which 23 is converted to a binary number. 'R' stands for remainder.
+
+23/2=11 R=1
+11/2=5 R=1
+5/2=2 R=1
+2/2=1 R=0
+1/2=0 R=1
+
+Therefore, the binary representation of 23 is '10111.'
+The name of the method is decimalToBinary.
