@@ -1,0 +1,36 @@
+A container is a storage unit capable of holding an unlimited number of objects. In this lab, you'll be implementing two types of containers: Queue and Stack. 
+
+The first type of container is called a queue. A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the first element added to the queue is the first one to be removed. 
+It can be visualized as a line of people waiting for a service, where the first person in line is the first to be served. The primary operations associated with a queue are:
+
+• Enqueue: Adds an element to the end (rear) of the queue.
+• Dequeue: Removes and returns the front element of the queue.
+• Front (or Peek): Returns the front element of the queue without removing it.
+• IsEmpty: Checks if the queue is empty.
+• Size: Returns the number of elements in the queue.
+
+The second type of container is called a stack. A stack follows the Last In, First Out (LIFO) rule for inserting and removing items from the container. This means that the last item added to the stack will be the first one removed. 
+You can visualize a stack as a plate dispenser, where adding a plate places it on top of the dispenser, and removing a plate takes it from the top. A stack has two main and two auxiliary methods: 
+
+• push(object): This method adds an object to the stack. In this lab, we've renamed
+push to add for the purpose of practicing polymorphism.
+• pop(): This method removes the last element added to the stack. In this lab, we've
+renamed pop to remove for the purpose of practicing polymorphism.
+• top(): This method returns the element at the top of the stack without removing it.
+• getSize(): This method returns the number of elements in the stack.
+
+
+##Task 1: Class Container
+
+This class contains a static final method that reads the file and creates a list containing the read data. Each line of the file is stored in one element of the list, which is then returned from this method. 
+Use Scanner object to read the contents of the file. Include code that will produce an exception if the filename does not exist. Don’t forget to close the scanner object.
+
+##Task 2: Class Queue
+
+While Queue is a type of container, it follows the rule of the Queue data structure (FIFO), meaning that items are processed in a first-in-first-out manner. Therefore, all the methods in this class should be implemented to adhere to this rule.
+This class contains an instance variable labeled "Queue" that holds all the items read from the file. The constructor of this class removes this label and adds the data to the queue.
+
+##Task 3: Class Stack
+
+The Stack class is another special type of container as explained previously. This class has a constructor that utilizes the list containing the data read from the file. It inserts the items labeled with "Stack" into the instance variable of the Stack class. 
+Before adding the data, it removes the label.
