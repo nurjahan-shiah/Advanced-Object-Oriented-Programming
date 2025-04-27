@@ -1,0 +1,50 @@
+1. In the class Vector3D, define the components of the vector (i.e., x, y, z). It is necessary to encapsulate your data since a client program, SpaceMission, will use this class later.
+2. Implement the methods provided in the UML diagram below for the Vector3D class. These methods cover the fundamental vector operations.
+
+
+Vector3D
+-------------------
+-x : double
+-y: double
+-z : double 
+-------------------
++Vector3D()
++Vector3D(double, double, double)
++Vector3D(+Vector3D)
++getX(): double
++getY(): double
++getZ(): double
++setX(double):void
++setY(double):void
++setZ(double):void
++add(Vector3D):Vector3D
++substract(Vector3D):Vector3D
++scalarMultiplication(double):Vector3D
++dotProduct(Vector3D):double
++magnitude():double
++toString():String
++equalTo(Vector3D, double): boolean
+
+
+
+3. Now you should implement the SpaceMission class from scratch based on the provided UML diagram. The instance variable(currentPosition) of this class shows your position (x, y, z) in the space. 
+
+
+SpaceMission
+---------------------------------
+-currentPosition: Vector3D
+---------------------------------
++SpaceMission(double, double, double)
++getCurrentPosition():Vector3D
++distanceTo(Vector3D):double
++refuel(double):void
++navigate(Vector3D, double, double): void
+
+
+
+Now, you have identified an interesting celestial body that you wish to travel to. To assess its feasibility, follow the steps below:
+    i. First, measure the distance between your current position and the location of the celestial body, which is represented by another vector. For this, Implement distanceTo(Vector3D)method. 
+    ii. To facilitate travel, there are instances where you need to refuel by certain amounts. This process involves vector scalar multiplication. When a vector is multiplied by a scalar, the length (magnitude) of the vector increases proportionally to the 
+scalar factor. To achieve this, implement the method refuel(double)in which you must use scalar Multiplication(double) as defined in the Vector3D class.
+    iii. Now, use the two methods mentioned above to implement navigate(Vector3D, double, double). This function checks the distance to the specified celestial body. If the distance is more than or equal to the provided threshold, you reposition yourself
+to where the celestial body is. If not, you repeatedly refuel yourself by the given refuel amount until the distance is more than or equal to the provided threshold. At this point, you reposition yourself.
