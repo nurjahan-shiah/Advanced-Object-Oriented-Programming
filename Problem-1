@@ -1,0 +1,29 @@
+❖ The First Method
+The method, called getMyID(), accepts no parameters and returns your student number. The return type must be a string. 
+
+
+
+❖ The Second Method
+This method accepts a double number, representing a grade, and returns the equivalent letter grade. The letter grade is computed using the following table:
+
+A+   ≥ 90
+A    80 ≤ < 90
+B+   75 ≤ < 80
+B    70 ≤ < 75
+C+   65 ≤ < 70
+C    60 ≤ < 65
+D+   55 ≤ < 60
+D    50 ≤ < 55
+E    45 ≤ < 50
+F    < 45
+The name of the method is getLetterGrade() and the return type is a string.
+
+
+
+
+❖ The Third Method
+This method, called addAndChangeScale(), takes an ArrayList of grades and returns the average of the grades at the scale of 10. All the grades in this ArrayList are out of 100. Let’s see a few examples:
+
+Input: {90.0, 95.0, 100.0}, Output: 9.5
+Input: {92.5, 94.0, 100.0, 100.0, 90.0}, Output: 9.53
+Please note that the output should be calculated and displayed with two decimal points. 
