@@ -1,0 +1,44 @@
+Create a parameterized class called Utility and decide on its methods’ signature.
+
+Class Utility is a class that contains 4 methods. The implementation of the methods is given below. The only thing that you need to do is to decide on the correct method signature so that all the test cases are passed.
+
+▪ linearSearch is a method that linearly searches for the given item (i.e. the input parameter) in list. The list is an instance variable of class Utility. You should decide on what is the correct method signature when the implementation looks like below:
+
+    int position = -1;
+    for (int i = 0; i <list.size(); i++) {
+    if (item.compareTo(list.get(i)) == 0) {
+    position = i;
+    break;
+    }
+  }
+  return position;
+
+  
+▪ mergeList is a method that gets a List of ‘some type’ as its input parameter and add all the items that exist in the instance variable to the end of the list. The code that you need to use as the implementation of this method is as follow:
+
+    for (T obj: this.list)
+    list.add(obj);
+
+▪ containList is a method that gets a list of ‘some type’. If the instance variable of this class contains all the elements of the input list, it adds all the elements of the input to the instance variable and returns true. The body of this method is below: 
+
+    if (this.list.containsAll(list)) {
+    this.list = new ArrayList<T>();
+    for (T obj: list)
+    this.list.add(obj);
+    return true;
+    }
+      else
+          return false;
+
+          
+▪ removeZero is a method that does not work on the instance variable of this class. It gets a list and removes all the zeros from the list. Here is the implementation of the method:
+
+    for (int i = 0; i < myList.size(); i++) {
+    if (MyInteger.isZero(myList.get(i))) {
+    myList.remove(i);
+    i--;
+      }
+    }
+
+In addition to the above methods, you should implement the constructors of the class in a way that does not fail the test cases. A few other classes can be found in Utility.java that are used for testing the correctness of your code. 
+These classes are called Point, MyInteger, NaturalNumber, OddNumber and EvenNumber.
