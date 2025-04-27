@@ -1,0 +1,22 @@
+The given code is a working code that solves the problem of calculating points that are given to the drivers who violate the maximum speed limit. The points are given according to the table below. Please note thatthe given code calculates the points only and 
+does nothing about other penalties.
+
+
+Speed                                        Penalty
+
+0-15 km/h                                     0 point
+16-29 km/h over the limit                     3 points
+30-49 km/h over the limit                     4 points + 30 Day suspension for G1 & G2 drivers + 100% Insurance increase
+50 km/h over the limit                        6 points + 30 Day suspension for G1 & G2 drivers + 100% Insurance increase
+Stunt driving racing & speeding 50 km/h+      6 points + 7 Day License suspension + 7 Day vehicle impound + 1 year license suspension + Max. fine $10,000 + Jail upto 6 months + 100% insurance increase
+
+
+Your task is to write a set of JUnit test cases that comprehensively test the given code. A comprehensive set of test cases is one that not only checks if the expected output is the same as the actual output, as described in the specification above 
+but also traverses all paths in the code. If there is a conditional statement, both the true and false conditions should be tested.
+
+For multiple conditions, all possible combinations ofthe conditions being true or false should be tested. This means ifthe condition is "A AND B,"four different test cases should be written, unless it is not possible. The four conditions are:
+
+– A=True, B=True
+– A=True, B=False
+– A=False, B=True
+– A=False, B=False.
