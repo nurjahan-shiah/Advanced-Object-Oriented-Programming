@@ -1,0 +1,59 @@
+A bank account can have many types, including current, saving, investment and so on. However, in this lab, we are only focusing on current accounts. Your task for this lab is to review the UML below and implement the code that adheres to this UML.
+An account can be deposited or withdrawn by certain amounts of money. This is done by two methods called deposit and withdraw respectively. It is not possible to withdraw more money than the balance of the account. 
+If a client attempts to do so, a user-defined exception called NotEnoughMoneyException is thrown. 
+
+Also, it is not possible to withdraw more money than what maxTransferable shows. If a client tries to do so, a user-defined exception called TransferNotAllowedException is thrown. This exception serves as the base class (i.e., superclass) of NotEnoughMoneyException.
+
+<<Comparable>>
+-------------------------
+-------------------------
++abstract CompareTo(Object): int
+
+_______________________>>>
+abstract Account
+-----------------------
+#accountNo: int
+#balance: double
+#fullName: String
+#dateOpened: Date
+#maxTransferable: double
+------------------------
++abstract deposit(double): void
++abstract withdraw(double): boolean
++transferFrom(Account, double): boolean
++getAccountNo(): int
++getBalance(): double
++getFullName(): String
++getDateOpened(): Date
++getMaxTransferable(): double
+
+______________________________>>>
+Current
+-----------------------------
+-----------------------------
++Current(int, double, String, Date, double)
++equals(Object): boolean
++hashCode(): int
+
+//Account throws Exception <<throws>> Java.lang.Exception
+______________________>>>
+TransferNotAllowedException
+----------------------------
+----------------------------
++TransferNotAllowedException()
++TransferNotAllowedException(String)
+
+______________________>>>
+NotEnoughMoneyException
+----------------------------
+----------------------------
++NotEnoughMoneyException()
++NotEnoughMoneyException(String)
+
+
+It is possible to transfer funds from one account to another using the transferFrom method. However, this method may throw two exceptions: one if the amount withdrawn exceeds the balance of the account, and another if the amount exceeds the maximum allowed 
+for the transfer. The equals() method returns true if object is of the same class as the current instance, is not null, and all relevant fields (accountNo, balance, fullName, maxTransferable, and dateOpened) are equal to those in the current instance. 
+It returns false otherwise.
+
+The hashCode method ensures that objects of the Current class produce a hash code based on the values of key fields (accountNo, balance, fullName, dateOpened, and maxTransferable). Task is to implement all the classes and methods depicted in the UML diagram. 
+This includes defining the structure of the classes, implementing their methods, and handling exceptions as specified in the requirements. 
