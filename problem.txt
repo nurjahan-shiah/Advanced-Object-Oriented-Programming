@@ -1,0 +1,38 @@
+In this assignment, two types of containers are defined: MyList and MySet. These containers can store an unlimited number of objects and have several methods defined for them, as shown in the UML below. 
+The key distinction between MyList and MySet lies in their handling of duplicate objects.
+
+MySet does not permit duplicate objects; therefore, if the add() method is called with an object that already exists in the container, it will not be added again.  Conversely, MyList does not impose this restriction and allows duplicate objects to be stored.
+Also, MyList provides access to its items via their index, enabling retrieval of specific elements. However, this functionality is not available in MySet.
+
+
+Container
+-------------------------
+# list: Object[]
+# Set: Object[]
+#size: int
+-------------------------
++add(Object): void
++remove(Object): Object
++isEmpty(): boolean
++getSize(): int
+
+>>>>>>>>>>>>>>>>>>>
+MyList
+>>>>>>>>>>>>>>>>>>>
++get(int): Object
++toString():String
+
+>>>>>>>>>>>>>>>>>>>
+MySet
+>>>>>>>>>>>>>>>>>>>
++toString():String
+
+
+##Task 1: Class Container
+  For this task, please implement isEmpty() and getSize() for the Container class according to the descriptions provided in the given JavaDoc.
+
+##Task 2: Class MyList
+  For this task, you need to implement all the methods of this class as explained in the javaDoc. Some of the methods inherited from class Container should be overridden.
+
+##Task 3: Class MySet
+  For this task, you need to implement all the methods of this class as explained in the javaDoc. Some of the methods inherited form class Container should be overridden.
