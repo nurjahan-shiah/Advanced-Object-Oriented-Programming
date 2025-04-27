@@ -1,0 +1,25 @@
+One of the most popular multiplayer video games in 2020 was “Among Us”. In this lab you are going to implement (a small part of) the backbone of this game, which is the objects and their relationships.
+
+Four to ten people can play this game, and each takes a role. A player can either be an imposter or a crewmate. The goal of the crewmates is to complete a set of tasks, while they identify the imposters and eliminate them. The goal of the imposters is to covertly 
+kill the crewmate before they complete their tasks. Through a voting system, a player may be voted as an imposter and fired from the game. Crewmates will be the winner either if they complete all the tasks or eliminate all the imposters. 
+Imposters will be the winner if the number of the crewmates in the game is the same as the imposters. 
+
+The game has a science fiction theme with four areas in which players play the game. These areas are called “The Skeld”, “MIRA HQ”, “Polus” and “Airship”. Implement only the constructors, static factory methods, setter and getter methods for the classes that are 
+shown in the UML below. It is important that the relationships (i.e., aggregations and composition) are implemented correctly. Please note that there are some methods in this UML are only there to make the objects more understandable and the relationship clearer.
+Static features are underlined in UML.
+
+##Task 1: Implementing Role class
+
+For this task, you are required to implement the overloaded and copy constructor in addition to the static factory methods and setter and getter methods. The full documentation of class and the methods can be found in the starter code. 
+
+##Task 2: Implementing Map class
+
+For this class you only need to implement two constructors; the overloaded and copy constructor in addition to the static factory methods.
+
+##Task 3: Implementing Player class
+
+Two types of the constructors (overloaded and copy) and all the setter and getter methods is what we ask you to implement for this task. Also, you should implement the static factory methods.
+
+##Task 4: Implementing Game class
+
+Three types of the constructors (default, overloaded and copy) and all the setter and getter methods plus the static factory methods is what we ask you to implement for this task. Instance variables in this class are all private.
